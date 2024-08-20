@@ -1,0 +1,79 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(115deg, rgba(224, 247, 250, 0.3), rgba(0, 121, 107, 0.2)), url('https://images.pexels.com/photos/50675/banquet-wedding-society-deco-50675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1, p{
+  text-align: center;
+  color: #004D40;
+}
+
+p{
+  font-style: italic;
+}
+
+.container{
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff2;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  padding: 0 6px;
+  margin-top: 10px;
+  display: block;
+  font-size: 18;
+  font-weight: bolder;
+  font-family: Verdana, sans-serif;
+  color: #004D40;
+}
+
+input, select, textarea{
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+textarea{
+  max-width: 100%;
+  height: 100px;
+  display: block;
+}
+
+.inline{
+  width: unset;
+  margin: 0 1px 0 0;
+  vertical-align: middle;
+}
+
+button{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 20px;
+  background-color: #C4F1BE;
+}
+
+button:hover {
+  background-color: #B4E1FF; 
+}
