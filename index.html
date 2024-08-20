@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!--TITULO-->
+        <h1 id="title">Encuesta de Satisfacción de Eventos</h1>
+        <p id="description">Ayúdanos a mejorar nuestros eventos futuros proporcionando tus valiosos comentarios. Tu opinión es importante para nosotros.</p>
+        
+        <!--FORMULARIO-->
+        <form id="survey-form">
+            <!--NOMBRE-->
+            <label id="name-label">Nombre Completo
+            <input type="text" id="name" required placeholder="Introduzca su nombre"></label>
+            <!--EMAIL-->
+            <label id="email-label">Correo
+            <input type="email" id="email" required placeholder="Introduce tu correo electrónico"></label>
+            <!--EDAD-->
+            <label id="number-label">Edad (opcional)
+            <input type="number" id="number"  min="12" max="100" placeholder="Edad"></label>
+            
+            <!--SELECT-->
+            <label id="select-label">Tipo de Evento
+            <select id="dropdown">
+                <option value="v1">Conferencias</option>
+                <option value="v2">Talleres</option>
+                <option value="v3">Seminarios</option>
+                <option value="v4">Conciertos</option>
+                <option value="v5">Otros</option>
+            </select></label>
+            
+            <!--RADIO-->
+            <label id="radio-label">Calificación del Evento (1 a 5)</label>
+            <label><input type="radio" value="1" name="radio" checked class="inline">1</label>
+            <label><input type="radio" value="2" name="radio" class="inline">2</label>
+            <label><input type="radio" value="3" name="radio" class="inline">3</label>
+            <label><input type="radio" value="4" name="radio" class="inline">4</label>
+            <label><input type="radio" value="5" name="radio" class="inline">5</label>
+            
+            <!--CHECKBOX-->
+            <label>¿Cómo te enteraste del evento?</label>
+            <label><input type="checkbox" value="1" class="inline">Redes Sociales</label>
+            <label><input type="checkbox" value="2" class="inline">Amigos/Familia</label>
+            <label><input type="checkbox" value="3" class="inline">Publicidad</label>
+            <label><input type="checkbox" value="4" class="inline">Otros</label>
+            
+            <!--SELECT-->
+            <label id="select-label">Satisfacción General
+            <select id="dropdown">
+                <option value="v1">Muy Satisfecho</option>
+                <option value="v2">Satisfecho</option>
+                <option value="v3">Neutral</option>
+                <option value="v4">Insatisfecho</option>
+                <option value="v4">Muy Insatisfecho</option>
+            </select></label>
+            
+            <!--TEXTAREA-->
+            <label>Comentarios
+            <textarea name="comentarios" id="coments" placeholder="deje su comentario..."></textarea></label>
+            
+            <!--RADIO-->
+            <label id="radio-label">¿Volverías a asistir a futuros eventos?</label>
+            <label><input type="radio" value="1" name="radio" checked class="inline">Sí</label>
+            <label><input type="radio" value="2" name="radio" class="inline">No</label>
+
+            <!---BUTTON-->
+            <button type="submit" id="submit">Enviar
+        </form>
+    </div>
+</body>
+</html>
